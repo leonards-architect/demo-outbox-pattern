@@ -1,0 +1,6 @@
+# Project exclude paths
+/.gradle/
+/order-rest-api/build/
+/order-rest-api/build/classes/java/main/
+/order-subscriber/build/
+/order-subscriber/build/classes/java/main/
