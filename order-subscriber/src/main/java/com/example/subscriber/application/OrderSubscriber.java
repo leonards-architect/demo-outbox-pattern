@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class OrderSubscriber {
 
-    @KafkaListener(topics = "sampledb.sample.orders", groupId = "my-group")
+    @KafkaListener(topics = "sampledb..sample.orders_outbox", groupId = "my-group")
     public void subscribe(String message) {
         log.info("Received message: " + message);
     }

@@ -36,7 +36,13 @@ curl -i -X POST -H "Accept:application/json" -H "Content-Type:application/json" 
     "database.include.list": "sample",
     "database.history.kafka.bootstrap.servers": "kafka:29092",
     "database.history.kafka.topic": "dbhistory.fullfillment",
-    "topic.prefix": "sampledb."
+    "topic.prefix": "sampledb.",
+    "schema.history.internal.kafka.bootstrap.servers": "kafka:29092",
+    "schema.history.internal.kafka.topic": "dbhistory-schema-changes"
   }
 }'
+```
+
+```bash
+curl -i -X DELETE localhost:8083/connectors/demo-sample-connector
 ```
